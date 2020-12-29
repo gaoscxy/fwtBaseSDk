@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">sdkTestDemo</string>
+    <string name="dialog_tips">"人脸识别中…"</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_door"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onTestIDCardDoor"
+        android:text="身份证阅读器（门禁）"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_idcard"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onTestIDCard"
+        android:text="身份证阅读器"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_finger"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onTestFinger"
+        android:text="指纹"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_face"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onTestUvcCameraFace"
+        android:text="人脸识别"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_high_camera"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onTestUvcCamera"
+        android:text="高拍仪"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onTestPrint"
+        android:text="打印机"
+        android:textSize="14sp" />
+</LinearLayout>

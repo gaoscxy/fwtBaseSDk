@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fx.com.aggregate">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application>
+
+        <service
+            android:name=".service.JCIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:priority="1000"></service>
+        <service
+            android:name=".service.SelfCheckingService"
+            android:exported="false" />
+        <service
+            android:name=".service.CameraPrinterService"
+            android:exported="false" />
+    </application>
+
+</manifest>

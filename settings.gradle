@@ -1,0 +1,2 @@
+include ':baseSdKTestSample'
+include ':app', ':idcard', ':fingerprinlib', ':doorcontrollib', ':aggregate', ':cameraprinterlib'

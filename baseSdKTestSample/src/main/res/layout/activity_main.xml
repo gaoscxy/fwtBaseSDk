@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cycle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键启动循环" />
+
+        <Button
+            android:id="@+id/init_btn"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="初始化(身份证/指纹/门禁)" />
+        <!--下面是业务流程-->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="读取身份证" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="比对指纹" />
+
+        <Button
+            android:id="@+id/btn_open_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="打开摄像头" />
+
+        <Button
+            android:id="@+id/btn_printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="打印机" />
+
+        <Button
+            android:id="@+id/btn_request_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="接口测试"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/clear_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="清空LOG" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/linear1">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</RelativeLayout>
